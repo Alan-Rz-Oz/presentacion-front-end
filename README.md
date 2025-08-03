@@ -35,7 +35,7 @@ La página presenta una introducción profesional, enlaces a redes sociales (Ins
 
 ## 🔗 Enlaces
 
-* [Ver en GitHub Pages](https://Alan-Rz-Oz/presentacion-front-end/) ← (actualiza con tu usuario real)
+* [Ver en GitHub Pages](https://github.com/Alan-Rz-Oz/presentacion-front-end/)
 * [Instagram](https://instagram.com)
 * [GitHub](https://github.com)
 
