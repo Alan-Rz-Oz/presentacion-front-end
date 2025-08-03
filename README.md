@@ -29,7 +29,7 @@ La página presenta una introducción profesional, enlaces a redes sociales (Ins
 
 # 📸 Vista previa
 
-![Captura del sitio]
+* ![Captura del sitio]
 
 > 💡 En construccion
 
@@ -40,6 +40,5 @@ La página presenta una introducción profesional, enlaces a redes sociales (Ins
 * [GitHub](https://github.com)
 
 ## ✍️ Autor
-* Alan Rodríguez
-  
+Alan Rodríguez
 ---
