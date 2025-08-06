@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Importa dos fuentes desde Google Fonts: Krona One y Montserrat con múltiples pesos */
+
+:root {
+    --color-primario: #5f5d9c;  /* Define una variable CSS para el color primario */
+    --color-secundario: #6196A6;  /* Define una variable CSS para el color secundario */
+    --color-terciario: #a4ce95;  /* Define una variable CSS para el color terciario */
+    --color-hover: #272727;  /* Define una variable CSS para el color de hover */
+    --fuente-mon: "Montserrat", sans-serif;  /* Define una variable CSS para la fuente principal */
+    --fuente-kro: "Krona One", sans-serif;  /* Define una variable CSS para la fuente secundaria */
+}
+
+* {
+    padding: 0%;  /* Elimina el relleno (padding) por defecto de todos los elementos */
+    margin: 0%;   /* Elimina el margen por defecto de todos los elementos */
+}
+
+body{
+    font-family: Arial, sans-serif;  /* Define la fuente principal del sitio como Arial o sans-serif si no está disponible */
+    margin: 0;  /* Elimina márgenes del body */
+    padding: 0;  /* Elimina relleno del body */
+    background-color: var(--color-primario);  /* Establece el fondo del body en negro */
+    color: var(--color-secundario);  /* Establece el color del texto en un gris muy claro */
+    box-sizing: border-box;  /* Incluye el padding y el border dentro del ancho y alto total del elemento */
+}
+
+strong{
+    color: var(--color-terciario);  /* Cambia el color del texto en negrita a un azul celeste */
+}
+
+span{
+    color: #9322fd;  /* Color púrpura para el texto dentro de span */
+    border: 0.5px solid #a522fd;  /* Borde delgado sólido en tono púrpura */
+    padding: 10px;  /* Relleno interno de 10px */
+}
+
+.titulo-destaque{
+    color: #fda922;  /* Establece el color del texto destacado (por clase) en un tono naranja */
+} 
+
+.presentacion{
+    display: flex;  /* Convierte el contenedor en un contenedor flexible (flexbox) */
+    align-items: center;  /* Centra los elementos verticalmente dentro del contenedor */
+    margin: 6% 15%;  /* Margen superior e inferior del 6% y laterales del 15% del ancho */
+    justify-content: space-between;  /* Distribuye el espacio entre los elementos de forma equitativa */
+}
+
+.presentacion__contenido{
+    width: 615px;  /* Ancho fijo para el contenido de presentación */
+    display: flex;  /* Contenedor flexible */
+    flex-direction: column;  /* Apila los elementos en dirección vertical */
+    gap: 30px;  /* Espacio entre elementos hijos */
+}
+
+.presentacion__contenido__titulo{
+    font-family: "Krona One", sans-serif;  /* Fuente personalizada para el título */
+    font-size: 36px;  /* Tamaño grande de fuente */
+    margin-bottom: 20px;  /* Espacio inferior de 20px */
+}
+
+.presentacion__contenido__parrafo{
+    font-family: "Montserrat", sans-serif;  /* Fuente personalizada para el texto */
+    font-size: 24px;  /* Tamaño de fuente mediano */
+    line-height: 1.5;  /* Altura de línea para mejor legibilidad */
+}
+
+.presentacion__contenido__redes{
+    display: flex;  /* Contenedor flexible */
+    justify-content: space-between;  /* Distribuye el espacio entre elementos hijos */
+    gap: 32px;  /* Espacio entre los elementos */
+    flex-direction: column;  /* Apila elementos verticalmente */
+    align-items: center;  /* Centra los elementos en el eje transversal (horizontal en este caso) */
+}
+
+.presentacion__contenido__redes__link{
+    width: 378px;  /* Ancho fijo de los enlaces */
+    text-align: center;  /* Centra el texto dentro del enlace */
+    padding: 21.5px 0;  /* Relleno superior e inferior, sin relleno lateral */
+    border-radius: 8px;  /* Bordes redondeados */
+    font-family: "Montserrat", sans-serif;  /* Fuente personalizada */
+    font-size: 24px;  /* Tamaño de fuente */
+    font-weight: 600;  /* Peso de fuente semi-negrita */
+    text-decoration: none;  /* Quita el subrayado de los enlaces */
+    color: var(--color-secundario);  /* Color de texto claro */
+    transition: color 0.3s ease;  /* Transición suave del color al interactuar */
+    border: var(--color-terciario) 2px solid;  /* Borde azul de 2px */
+    display: flex;  /* Flexbox para alinear el contenido interno */
+    justify-content: center;  /* Centra el contenido horizontalmente */
+    gap : 10px;  /* Espacio entre elementos hijos del enlace */
+}
+
+.presentacion__contenido__redes__link:hover{
+    color: var(--color-terciario);  /* Cambia el color del texto al pasar el cursor */
+    background-color: var(--color-hover);  /* Añade un fondo semitransparente azul claro al pasar el cursor */
+}
+
+.presentacion__contenido__subtitulo{
+    font-family: "Krona One", sans-serif;  /* Fuente personalizada */
+    font-size: 24px;  /* Tamaño de letra medio */
+    font-weight: 400;  /* Peso de fuente normal */
+    margin-bottom: 10px;  /* Espacio inferior de 10px */
+}
+
+.footer{
+    background-color: var(--color-terciario);  /* Fondo azul celeste */
+    text-align: center;  /* Centra el texto dentro del pie de página */
+    padding: 24px 0;  /* Relleno superior e inferior */
+    font-family: "Montserrat", sans-serif;  /* Fuente personalizada */
+    font-size: 24px;  /* Tamaño de fuente pequeño */
+    color:var(--color-primario);  /* Color de texto gris */
+    border-top: 1px solid var(--color-hover);  /* Línea superior para separar el pie de página */
+    margin-top: 20px;  /* Espacio superior de 20px */
+}
+
+
+.header{
+    background-color: var(--color-primario);  /* Fondo*/
+    padding: 2% 0% 0% 15%; /* Relleno superior del 2% y lateral izquierdo del 15% */
+}
+.header__menu{
+    display: flex;  /* Contenedor flexible para el menú */
+    gap: 80px;  /* Espacio entre los enlaces del menú */
+
+}
+.header__menu__link{
+    font-family: "Montserrat", sans-serif;  /* Fuente personalizada */
+    font-size: 24px;  /* Tamaño de fuente */
+    font-weight: 600;  /* Peso de fuente semi-negrita */
+    color: var(--color-terciario);  /* Cambia el color del texto a un azul celeste */
+    text-decoration: none;  /* Quita el subrayado de los enlaces */
+    margin: 0 15px;  /* Espacio lateral entre enlaces */
+    transition: color 0.3s ease;  /* Transición suave del color al interactuar */
+}

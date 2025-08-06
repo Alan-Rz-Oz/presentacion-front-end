@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Document 📱</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-    <header></header>
+    <header class="header" >
+        <nav class="header__menu">
+            <a class="header__menu__link" href="index.html" > Home </a>
+            <a class="header__menu__link" href="about.html"> Sobre mi </a>
+        </nav>
+    </header>
     <main class="presentacion">
         <selection class="presentacion__contenido">
             <h1 class="presentacion__contenido__titulo"> 
@@ -18,16 +23,19 @@
             </p>
 
             <div class="presentacion__contenido__redes">
-                <a class="presentacion__contenido__redes__link" href="https://Instagram.com"> Instagram </a>
-                <a class="presentacion__contenido__redes__link" href="https://Github.com"> Github </a>   
+                <h2 class="presentacion__contenido__subtitulo" > Accede a mis redes sociales </h2>
+                <a class="presentacion__contenido__redes__link" href="https://Instagram.com"> <img src="/assets/instagram.png"> Instagram </a>
+                <a class="presentacion__contenido__redes__link" href="https://Github.com"> <img src="/assets/github.png"> Github </a>   
             </div>
 
 
         </selection>
 
-        <img src="Imagen.webp" alt="Imagen de TRex">
+        <img src="/assets/Imagen.webp" alt="Imagen de TRex">
         
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <p> Desarrollado por Alura Latam </p>
+    </footer>
 </body>
 </html>
