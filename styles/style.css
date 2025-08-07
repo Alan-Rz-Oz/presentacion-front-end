@@ -2,12 +2,13 @@
 /* Importa dos fuentes desde Google Fonts: Krona One y Montserrat con múltiples pesos */
 
 :root {
-    --color-primario: #5f5d9c;  /* Define una variable CSS para el color primario */
-    --color-secundario: #6196A6;  /* Define una variable CSS para el color secundario */
-    --color-terciario: #a4ce95;  /* Define una variable CSS para el color terciario */
-    --color-hover: #272727;  /* Define una variable CSS para el color de hover */
+    --color-primario: #090040;  /* Define una variable CSS para el color primario */
+    --color-secundario: #fe8c01;  /* Define una variable CSS para el color secundario */
+    --color-terciario: #B13BFF;  /* Define una variable CSS para el color terciario */
+    --color-hover: #FFCC00;  /* Define una variable CSS para el color de hover */
     --fuente-mon: "Montserrat", sans-serif;  /* Define una variable CSS para la fuente principal */
     --fuente-kro: "Krona One", sans-serif;  /* Define una variable CSS para la fuente secundaria */
+    --fuente-texto: 1.5rem;  /* Define una variable CSS para el tamaño de fuente base */
 }
 
 * {
@@ -43,10 +44,11 @@ span{
     align-items: center;  /* Centra los elementos verticalmente dentro del contenedor */
     margin: 6% 15%;  /* Margen superior e inferior del 6% y laterales del 15% del ancho */
     justify-content: space-between;  /* Distribuye el espacio entre los elementos de forma equitativa */
+    gap: 82px;  /* Espacio entre los elementos hijos del contenedor */
 }
 
 .presentacion__contenido{
-    width: 615px;  /* Ancho fijo para el contenido de presentación */
+    width: 50%;  /* Ancho del contenido al 50% del contenedor padre */
     display: flex;  /* Contenedor flexible */
     flex-direction: column;  /* Apila los elementos en dirección vertical */
     gap: 30px;  /* Espacio entre elementos hijos */
@@ -54,13 +56,13 @@ span{
 
 .presentacion__contenido__titulo{
     font-family: "Krona One", sans-serif;  /* Fuente personalizada para el título */
-    font-size: 36px;  /* Tamaño grande de fuente */
+    font-size: 2.25rem;  /* Tamaño grande de fuente */
     margin-bottom: 20px;  /* Espacio inferior de 20px */
 }
 
 .presentacion__contenido__parrafo{
     font-family: "Montserrat", sans-serif;  /* Fuente personalizada para el texto */
-    font-size: 24px;  /* Tamaño de fuente mediano */
+    font-size: var(--fuente-texto);  /* Tamaño de fuente mediano */
     line-height: 1.5;  /* Altura de línea para mejor legibilidad */
 }
 
@@ -73,12 +75,12 @@ span{
 }
 
 .presentacion__contenido__redes__link{
-    width: 378px;  /* Ancho fijo de los enlaces */
+    width: 50%;  /* Ancho del enlace al 50% del contenedor */
     text-align: center;  /* Centra el texto dentro del enlace */
     padding: 21.5px 0;  /* Relleno superior e inferior, sin relleno lateral */
     border-radius: 8px;  /* Bordes redondeados */
     font-family: "Montserrat", sans-serif;  /* Fuente personalizada */
-    font-size: 24px;  /* Tamaño de fuente */
+    font-size: var(--fuente-texto);  /* Tamaño de fuente */
     font-weight: 600;  /* Peso de fuente semi-negrita */
     text-decoration: none;  /* Quita el subrayado de los enlaces */
     color: var(--color-secundario);  /* Color de texto claro */
@@ -96,7 +98,7 @@ span{
 
 .presentacion__contenido__subtitulo{
     font-family: "Krona One", sans-serif;  /* Fuente personalizada */
-    font-size: 24px;  /* Tamaño de letra medio */
+    font-size: var(--fuente-texto);  /* Tamaño de letra medio */
     font-weight: 400;  /* Peso de fuente normal */
     margin-bottom: 10px;  /* Espacio inferior de 10px */
 }
@@ -104,9 +106,9 @@ span{
 .footer{
     background-color: var(--color-terciario);  /* Fondo azul celeste */
     text-align: center;  /* Centra el texto dentro del pie de página */
-    padding: 24px 0;  /* Relleno superior e inferior */
+    padding: var(--fuente-texto) 0;  /* Relleno superior e inferior */
     font-family: "Montserrat", sans-serif;  /* Fuente personalizada */
-    font-size: 24px;  /* Tamaño de fuente pequeño */
+    font-size: var(--fuente-texto);  /* Tamaño de fuente pequeño */
     color:var(--color-primario);  /* Color de texto gris */
     border-top: 1px solid var(--color-hover);  /* Línea superior para separar el pie de página */
     margin-top: 20px;  /* Espacio superior de 20px */
@@ -124,10 +126,54 @@ span{
 }
 .header__menu__link{
     font-family: "Montserrat", sans-serif;  /* Fuente personalizada */
-    font-size: 24px;  /* Tamaño de fuente */
+    font-size: var(--fuente-texto);  /* Tamaño de fuente */
     font-weight: 600;  /* Peso de fuente semi-negrita */
     color: var(--color-terciario);  /* Cambia el color del texto a un azul celeste */
     text-decoration: none;  /* Quita el subrayado de los enlaces */
     margin: 0 15px;  /* Espacio lateral entre enlaces */
     transition: color 0.3s ease;  /* Transición suave del color al interactuar */
+}
+
+.imagen{
+    width:  50%;  /* Ancho de la imagen al 50% del contenedor */
+    height: auto;  /* Altura automática para mantener la proporción */
+}
+
+@media (max-width: 1280px) {
+    .presentacion{
+        flex-direction: column-reverse;  /* Cambia la dirección del flex a columna en pantallas pequeñas */
+        text-align: center;  /* Centra el texto en pantallas pequeñas */
+        margin: 6% 5%;  /* Ajusta los márgenes para pantallas pequeñas */
+        padding: 5%;  /* Añade relleno del 5% en pantallas pequeñas */
+    }
+    .presentacion__contenido{
+        width: auto;  /* Ancho completo del contenido en pantallas pequeñas */
+    }
+    .presentacion__contenido__redes{
+        flex-direction: row;  /* Cambia la dirección del flex a fila para las redes sociales */
+        flex-wrap: wrap;  /* Permite que los elementos se envuelvan a la siguiente línea si es necesario */
+        justify-content: center;  /* Centra los elementos horizontalmente */
+    }
+
+    .imagen{
+        width:  100%;  /* Ancho completo de la imagen en pantallas pequeñas */
+        height: auto;  /* Altura automática para mantener la proporción */
+        margin-top: 20px;  /* Espacio superior de 20px */
+    }
+    
+    .presentacion__contenido__redes__link{
+         font-size: auto;  /* Tamaño de fuente automático para adaptarse al contenedor */
+    }
+    .header{
+        padding: 2% 5% 0% 5%; /* Ajusta el relleno para pantallas pequeñas */
+    }
+    .header__menu{
+        gap: 20px;  /* Reduce el espacio entre los enlaces del menú en pantallas pequeñas */
+        flex-wrap: wrap;  /* Permite que los enlaces se envuelvan a la siguiente línea si es necesario */
+        justify-content: center;  /* Centra los enlaces horizontalmente */
+    }
+    .header__menu__link{
+        margin: 10px;  /* Ajusta el margen entre los enlaces en pantallas pequeñas */
+        font-size: 1rem;  /* Reduce el tamaño de fuente para pantallas pequeñas */
+    }
 }
